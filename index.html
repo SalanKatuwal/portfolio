@@ -3,25 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Salan Bahadur Katuwal - AI/ML Portfolio</title>
+  <title>Salan Katuwal - AI/ML Portfolio</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <!-- Custom CSS -->
   <style>
     body {
-      font-family: Arial, sans-serif;
+        font-family: Arial, sans-serif;
       background-color: #0f0a36;
       color: white;
     }
     .hero {
-      height: 100vh;
-      color: white;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      margin-top: 56px; /* To offset fixed navbar */
-    }
+      justify-content: space-between;
+      align-items: center; /* Center items vertically */
+      padding: 20px; /* Adjust padding as needed */
+      height: 100vh; /* Full viewport height */
+  }
+  
+  .hero-content {
+    flex: 1; /* Allows the content to take up available space */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+  
+  .hero-image {
+      flex: 1; /* Allows the image to take up available space */
+      display: flex;
+      justify-content: flex-end; /* Align image to the right */
+  }
+  
+  .hero-image img {
+      max-width: 100%; /* Ensure image doesn't exceed container width */
+      height: auto; /* Maintain aspect ratio */
+  }
+  
     .hero h1 {
       font-size: 4rem;
       font-weight: bold;
@@ -58,6 +77,14 @@
       transform: scale(1.05);
       cursor: pointer;
     }
+    /* Custom styles for the navigation */
+.navbar-dark .navbar-nav .nav-link {
+    color: white; /* Set nav link text color to pure white */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Optional: lighter shade on hover */
+}
   </style>
 </head>
 <body>
@@ -78,14 +105,17 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div>
-      <h1>Hi, I'm Salan Bahadur Katuwal</h1>
-      <p>Aspiring AI/ML Engineer</p>
-      <a href="#projects" class="btn btn-primary">View My Work</a>
+  <div class="hero">
+    <div class="hero-content">
+        <h1>Salan Katuwal</h1>
+        <p>Aspiring AI/ML Engineer</p>
+        <a href="#projects" class="btn btn-primary">View My Work</a>
     </div>
-  </section>
+    <div class="hero-image">
+        <img src="cover.png" alt="Hero Image">
+    </div>
+</div>
+
 
   <!-- About Section (Full-screen) -->
   <section id="about" class="container-fluid full-screen-section">
