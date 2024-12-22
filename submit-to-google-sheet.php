@@ -33,10 +33,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "From: $email" . "\r\n";
 
     // Send the email
-    if (mail($to, $subject, $email_content, $headers)) {
-        echo "Message sent successfully!";
-    } else {
-        echo "There was a problem sending your message. Please try again.";
+    try {
+        if (mail($to, $subject, $email_content, $headers)) {
+            echo "Message sent successfully!";
+        } else {
+            throw new Exception("There was a problem sending your message.");
+        }
+    } catch (Exception $e) {
+        echo "There was an issue with your submission. Please try again later.";
+        // Log the error (you can check the server's error logs for more details)
+        error_log($e->getMessage());
     }
 }
 ?>
