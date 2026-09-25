@@ -732,6 +732,13 @@ section,
   padding: 30px;
 }
 
+.about .col-lg-5 img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: top center;
+}
+
 .about .skills-content h5 {
   font-size: 18px;
   font-weight: 700;
