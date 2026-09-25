@@ -12,7 +12,7 @@ To preview locally, serve the repo root with any static server, e.g.:
 python3 -m http.server 8000
 ```
 
-Use a server rather than opening files directly: the demo pages reference the favicon with an absolute path (`/assets/img/logo.png`).
+Use a server rather than opening files directly: the demo pages reference the favicon with an absolute path (`/assets/img/favicon.png`).
 
 ## Structure
 
