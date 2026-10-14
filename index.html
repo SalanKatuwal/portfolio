@@ -26,11 +26,6 @@
     />
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
@@ -94,19 +89,25 @@
     <main class="main">
       <!-- Hero Section -->
       <section id="hero" class="hero section bg-secondary">
+        <div class="hero-blobs" aria-hidden="true">
+          <span class="hero-blob hero-blob-1"></span>
+          <span class="hero-blob hero-blob-2"></span>
+        </div>
         <div
           class="container d-flex flex-column align-items-center justify-content-center text-center"
-          data-aos="fade-up"
-          data-aos-delay="100"
         >
-          <h2>I am Salan Katuwal</h2>
-          <p>
+          <h2 data-aos="fade-down" data-aos-delay="100">I am Salan Katuwal</h2>
+          <p data-aos="fade-up" data-aos-delay="300">
             <span
               class="typed"
               data-typed-items="Associate software engineer, Python(Odoo) Developer, "
             ></span>
           </p>
-          <div class="social-links justify-content-center">
+          <div
+            class="social-links justify-content-center"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
             <a href="https://github.com/SalanKatuwal" target="_blanl"
               ><i class="bi bi-github"></i
             ></a>
@@ -131,18 +132,18 @@
 
       <!-- About Section -->
       <section id="about" class="about section">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
           <div class="row gy-4">
             <div class="col-md-6">
               <div class="row justify-content-between gy-4">
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
                   <img
                     src="assets/img/linked_in.jpg"
                     class="img-fluid"
                     alt=""
                   />
                 </div>
-                <div class="col-lg-7 about-info">
+                <div class="col-lg-7 about-info" data-aos="fade-up" data-aos-delay="200">
                   <p><strong>Name: </strong> <span>Salan Katuwal</span></p>
                   <p><strong>Profile: </strong> <span>Associate Software Engineer</span></p>
                   <p><strong>Email: </strong> <span>salanb61@gmai.com</span></p>
@@ -150,7 +151,7 @@
                 </div>
               </div>
 
-              <div class="skills-content skills-animation">
+              <div class="skills-content skills-animation" data-aos="fade-up" data-aos-delay="300">
                 <h5>Skills</h5>
 
                 <div class="progress">
@@ -222,7 +223,7 @@
             </div>
 
             <div class="col-md-6">
-              <div class="about-me">
+              <div class="about-me" data-aos="fade-left" data-aos-delay="200">
                 <h4>About me</h4>
                 <p>
                   Hello, I am <strong>Salan Katuwal</strong>, an
@@ -311,7 +312,6 @@
                 </h4>
                 <h5>2022 - 2026</h5>
                 <p><em>Central Campus of Technology, Dharan</em></p>
-                <!-- <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p> -->
               </div>
               <!-- Edn Resume Item -->
 
@@ -354,17 +354,6 @@
               </div>
               <!-- Edn Resume Item -->
 
-              <!-- <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div>Edn Resume Item -->
               <br />
               <a href="assets/pdf/salan_resume.pdf" target="_blank"
                 >Resume</a
@@ -385,273 +374,192 @@
 
         <div class="container">
           <div class="row gy-4">
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-book"></i>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="project-card h-100">
+                <div class="project-icon">
+                  <i class="fa-solid fa-table-cells"></i>
                 </div>
-                <a
-                  href="https://github.com/SalanKatuwal/Django-Book-Store"
-                  target="_blank"
-                >
-                  <h3>Django Book Store Project</h3>
-                </a>
+                <h3>Tic-Tac-Toe</h3>
                 <p>
-                  A professional web application developed using Django,
-                  designed to facilitate efficient management of books in an
-                  online store. Key features include the ability to add, update,
-                  and delete books, view detailed book information, and browse
-                  organized book listings presented with a clean, responsive
-                  Bootstrap-styled interface. The application leverages a SQLite
-                  database to securely store and manage book details, including
-                  title, author, genre, price, and description.
-                  <br />
-                  <i class="fab fa-github"></i>
-                  <a
-                    href="https://github.com/SalanKatuwal/Django-Book-Store"
-                    target="_blank"
-                    >Github repository</a
-                  >
-                  <br />
-                  Watch the
-                  <a href="bookstore.html" target="_blank">Demo</a> of the
-                  project
+                  It is a simple Tic-Tac-Toe game which is build using
+                  HTML/CSS and JS.
                 </p>
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://tictactoe.salankatuwal.com.np/"
+                    target="_blank"
+                    class="btn-project btn-project-primary btn-project-sm"
+                  >
+                    <i class="bi bi-controller"></i> Play Live
+                  </a>
+                  <a
+                    href="https://github.com/SalanKatuwal/Tic-tac-toe"
+                    target="_blank"
+                    class="btn-project btn-project-outline btn-project-sm"
+                  >
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                </div>
               </div>
             </div>
-            <!-- End Service Item -->
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="service-item position-relative">
-                <div class="icon">
+            <!-- End Project Card -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+              <div class="project-card h-100">
+                <div class="project-icon">
+                  <i class="fa-solid fa-bug"></i>
+                </div>
+                <h3>Bug on the Wire</h3>
+                <p>
+                  A fast-paced, canvas-based browser game. Dodge incoming
+                  crows, collect shield power-ups, and survive as long as you
+                  can to beat your high score, with parallax scrolling and
+                  sound effects.
+                </p>
+                <div class="project-tags">
+                  <span>HTML5 Canvas</span>
+                  <span>JavaScript</span>
+                  <span>CSS3</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://bugonthewire.salankatuwal.com.np/"
+                    target="_blank"
+                    class="btn-project btn-project-primary btn-project-sm"
+                  >
+                    <i class="bi bi-controller"></i> Play Live
+                  </a>
+                  <a
+                    href="https://github.com/SalanKatuwal/Bug-On-the-Wire-Game"
+                    target="_blank"
+                    class="btn-project btn-project-outline btn-project-sm"
+                  >
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Project Card -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-card h-100">
+                <div class="project-icon">
                   <i class="fa-solid fa-graduation-cap"></i>
                 </div>
-                <a
-                  href="https://github.com/SalanKatuwal/django-student-marksheet"
-                  target="_blank"
-                >
-                  <h3>Django Marksheet Project</h3>
-                </a>
+                <h3>Django Marksheet Project</h3>
                 <p>
                   A comprehensive web application developed using Django,
-                  designed to efficiently manage and display real-world student
-                  marksheets. This application empowers educators to input
-                  detailed student information along with their respective
-                  marks, automatically generating professional-grade marksheets.
-                  Each marksheet provides an in-depth breakdown of individual
-                  student performance, including subject-wise scores, total
-                  marks, and overall academic evaluation, ensuring accuracy and
-                  ease of use for academic institutions.
-                  <br />
-                  <i class="fab fa-github"></i>
+                  designed to efficiently manage and display real-world
+                  student marksheets. Educators can input student information
+                  and marks to automatically generate professional-grade
+                  marksheets, with a full breakdown of subject-wise scores and
+                  overall academic evaluation.
+                </p>
+                <div class="project-tags">
+                  <span>Django</span>
+                  <span>Bootstrap</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="marksheet.html"
+                    target="_blank"
+                    class="btn-project btn-project-primary btn-project-sm"
+                  >
+                    <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                  </a>
                   <a
                     href="https://github.com/SalanKatuwal/django-student-marksheet"
                     target="_blank"
-                    >Github repository</a
+                    class="btn-project btn-project-outline btn-project-sm"
                   >
-                  <br />
-                  Watch the
-                  <a href="marksheet.html" target="_blank">Demo</a> of the
-                  project
-                </p>
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                </div>
               </div>
             </div>
+            <!-- End Project Card -->
 
-            <!-- End Service Item -->
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="service-item position-relative">
-                <div class="icon">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+              <div class="project-card h-100">
+                <div class="project-icon">
+                  <i class="fa-solid fa-book"></i>
+                </div>
+                <h3>Django Book Store Project</h3>
+                <p>
+                  A professional web application developed using Django,
+                  designed to facilitate efficient management of books in an
+                  online store. Key features include adding, updating and
+                  deleting books, viewing detailed book information, and
+                  browsing organized book listings in a clean, responsive
+                  interface. Book details are securely stored in a SQLite
+                  database.
+                </p>
+                <div class="project-tags">
+                  <span>Django</span>
+                  <span>Bootstrap</span>
+                  <span>SQLite</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="bookstore.html"
+                    target="_blank"
+                    class="btn-project btn-project-primary btn-project-sm"
+                  >
+                    <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/SalanKatuwal/Django-Book-Store"
+                    target="_blank"
+                    class="btn-project btn-project-outline btn-project-sm"
+                  >
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Project Card -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="project-card h-100">
+                <div class="project-icon">
                   <i class="fa-solid fa-list-ol"></i>
                 </div>
-                <a
-                  href="https://github.com/SalanKatuwal/Django-To-Do-List"
-                  target="_blank"
-                >
-                  <h3>Django To-Do-List</h3>
-                </a>
+                <h3>Django To-Do-List</h3>
                 <p>
-                  This is a To-Do-List web application built with the Django
-                  framework. The app allows users to create, update, and delete
-                  tasks. Each task can be marked as complete or active. The app
-                  is connected to a database to store tasks persistently.It is
-                  designed to support multiple users, ensuring that each user
-                  can only view and manage their own tasks. It includes features
-                  like user authentication, task prioritization. The project is
-                  built with Django's robust framework and styled using
-                  Bootstrap for a clean and responsive interface.
-                  <br />
-                  <i class="fab fa-github"></i>
+                  A To-Do-List web application built with the Django
+                  framework. Users can create, update, and delete tasks, and
+                  mark them complete or active. The app supports multiple
+                  users with authentication, so each user only sees their own
+                  tasks, with persistent storage and task prioritization.
+                </p>
+                <div class="project-tags">
+                  <span>Django</span>
+                  <span>Bootstrap</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="todolist.html"
+                    target="_blank"
+                    class="btn-project btn-project-primary btn-project-sm"
+                  >
+                    <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                  </a>
                   <a
                     href="https://github.com/SalanKatuwal/Django-To-Do-List"
                     target="_blank"
-                    >Github repository</a
+                    class="btn-project btn-project-outline btn-project-sm"
                   >
-                  <br />
-                  Watch the
-                  <a href="todolist.html" target="_blank">Demo</a> of the
-                  project
-                </p>
-              </div>
-            </div>
-            <!-- End Service Item -->
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="fa-regular fa-envelope"></i>
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
                 </div>
-                <a
-                  href="https://salankatuwal-email-fraud-detection.streamlit.app/"
-                  target="_blank"
-                >
-                  <h3>Email/SMS Classifier</h3>
-                </a>
-                <p>
-                  This project is a machine learning model designed to classify
-                  emails and SMS messages as spam or legitimate. It utilizes the
-                  Multinomial Naive Bayes (MultinomialNB) algorithm and has been
-                  evaluated with impressive performance metrics, achieving an
-                  accuracy of 97% and a perfect precision score of 1.0. The
-                  model has been successfully deployed in a production
-                  environment. <br />
-                </p>
-                <i class="fab fa-github"></i>
-                <a
-                  href="https://github.com/SalanKatuwal/Email_Fraud_Detection"
-                  target="_blank"
-                  >Github repository</a
-                >
-                <br />
-                Test the deployed
-                <a
-                  href="https://salankatuwal-email-fraud-detection.streamlit.app/"
-                  target="_blank"
-                  >Email/SMS classifier</a
-                >
-                online.
               </div>
             </div>
-            <!-- End Service Item -->
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-car-side"></i>
-                </div>
-                <a
-                  href="https://github.com/SalanKatuwal/Car-price-prediction"
-                  target="_blank"
-                >
-                  <h3>Car Price Prediction</h3>
-                </a>
-                <p>
-                  It is a machine learning model which identifies the price of
-                  the second hand car although it has been trained with data of
-                  old cars and it was for my practice. <br />
-                </p>
-                <i class="fab fa-github"></i>
-                <a
-                  href="https://github.com/SalanKatuwal/Car-price-prediction"
-                  target="_blank"
-                  >Github repository</a
-                >
-              </div>
-            </div>
-            <!-- End Service Item -->
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="fa-solid fa-t"></i>
-                </div>
-                <a
-                  href="https://salankatuwal.github.io/Tic-tac-toe/"
-                  target="_blank"
-                >
-                  <h3>Tic-Tac-Toe</h3>
-                </a>
-                <p>
-                  It is a simple Tic-Tac-Toe game which is build using HTML/CSS
-                  and JS <br />
-                </p>
-                <i class="fab fa-github"></i>
-                <a
-                  href="https://github.com/SalanKatuwal/Tic-tac-toe"
-                  target="_blank"
-                  >Github repository</a
-                >
-                <br />
-                Play the
-                <a
-                  href="https://salankatuwal.github.io/Tic-tac-toe/"
-                  target="_blank"
-                  >Tic-Tac-Toe</a
-                >
-                game.
-              </div>
-            </div>
-            <!-- End Service Item -->
-
-            <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
-              </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div>End Service Item
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Velit Doloremque</h3>
-              </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div>End Service Item
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Dolori Architecto</h3>
-              </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div>End Service Item -->
+            <!-- End Project Card -->
           </div>
         </div>
       </section>
@@ -1188,39 +1096,49 @@
         </div>
         <!-- End Section Title -->
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+        <div class="container">
+          <div class="info-wrap">
             <div class="row gy-5">
-              <div class="col-lg-4">
-                <div class="info-item d-flex align-items-center">
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <a
+                  class="info-item d-flex align-items-center"
+                  href="https://www.google.com/maps/search/?api=1&query=Koteshwor%2C+Kathmandu%2C+Nepal"
+                  target="_blank"
+                  rel="noopener"
+                >
                   <i class="bi bi-geo-alt flex-shrink-0"></i>
                   <div>
                     <h3>Address</h3>
-                    <p>Pathari-sanischare 08,Milanchowk,Morang,Nepal</p>
+                    <p>Koteshwor, Kathamndu, Nepal</p>
                   </div>
-                </div>
+                </a>
               </div>
               <!-- End Info Item -->
 
-              <div class="col-lg-4">
-                <div class="info-item d-flex align-items-center">
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <a class="info-item d-flex align-items-center" href="tel:+9779815305649">
                   <i class="bi bi-telephone flex-shrink-0"></i>
                   <div>
                     <h3>Call Me</h3>
                     <p>+977 9815305649</p>
                   </div>
-                </div>
+                </a>
               </div>
               <!-- End Info Item -->
 
-              <div class="col-lg-4">
-                <div class="info-item d-flex align-items-center">
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <a
+                  class="info-item d-flex align-items-center"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=salanb61@gmail.com"
+                  target="_blank"
+                  rel="noopener"
+                >
                   <i class="bi bi-envelope flex-shrink-0"></i>
                   <div>
                     <h3>Email Me</h3>
-                    <a href="mailto:salanb61@gmail.com">salanb61@gmail.com</a>
+                    <p>salanb61@gmail.com</p>
                   </div>
-                </div>
+                </a>
               </div>
               <!-- End Info Item -->
             </div>
@@ -1233,7 +1151,7 @@
     </main>
 
     <footer id="footer" class="footer bg-light">
-      <div class="container text-center">
+      <div class="container text-center" data-aos="fade-up">
         <h1>Salan Katuwal</h1>
         <div class="copyright text-center">
           <p>
@@ -1241,14 +1159,6 @@
             <strong class="px-1 sitename">Salan Katuwal</strong>
             <span>All Rights Reserved</span>
           </p>
-        </div>
-
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
     </footer>
@@ -1266,15 +1176,9 @@
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/typed.js/typed.umd.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
